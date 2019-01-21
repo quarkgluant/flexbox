@@ -1,0 +1,37 @@
+/* VOTRE CSS ICI */
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    flex-basis: 100%;
+}
+
+.sidebar {
+    flex-basis: 20%;
+}
+
+.content {
+    flex-basis: 60%;
+}
+
+footer {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        flex-basis: 100%;
+        order: 1;
+    }
+    .sidebar {
+        flex-basis: 50%;
+        order: 2;
+    }
+    footer {
+        order: 3;
+    }
+}

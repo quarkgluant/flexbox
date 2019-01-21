@@ -1,0 +1,27 @@
+/* Votre CSS ici (uniquement) */
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pagination a {
+    flex-grow: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .page-number {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pagination {
+        /* flex-direction: column; */
+        /* à la place de flew-wrap et flex-basis on peut ici utiliser flex-direction */
+    }
+    .page-label {
+        flex-basis: 100%;
+    }
+}

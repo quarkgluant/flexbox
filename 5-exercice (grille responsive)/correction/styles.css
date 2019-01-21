@@ -1,0 +1,11 @@
+/* Votre code CSS "personnalisé" */
+
+.item{
+	color: white;
+	background-color: #7971ea;
+	border: 5px solid #443ea0;
+	border-radius: 8px;
+	padding: 20px 10px;
+	font-size: 1.5em;
+	text-align: center;
+}

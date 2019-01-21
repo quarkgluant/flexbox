@@ -1,0 +1,52 @@
+/* Votre code CSS pour la grille Flexbox */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.item-1 {
+    flex-basis: 8.33%;
+}
+
+.item-2 {
+    flex-basis: 16.67%;
+}
+
+.item-3 {
+    flex-basis: 25%;
+}
+
+.item-6 {
+    flex-basis: 50%;
+}
+
+.item-9 {
+    flex-basis: 75%;
+}
+
+.item-11 {
+    flex-basis: 91.67%;
+}
+
+@media (max-width: 600px) {
+    .item-1,
+    .item-2,
+    .item-3 {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-6 {
+        flex-basis: 100%;
+    }
+}
